@@ -6,12 +6,6 @@ cask 'flutter' do
   name 'flutter'
   homepage "https://flutter.io/"
 
-  depends_on "usbmuxd"
-  depends_on "libimobiledevice"
-  depends_on "ideviceinstaller"
-  depends_on "ios-deploy"
-  depends_on "cocoapods"
-
   def install
     system "pod", "setup"
   end
