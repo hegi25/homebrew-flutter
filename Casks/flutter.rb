@@ -1,4 +1,4 @@
-class flutter < Formula
+cask 'flutter' do
   version "1.2.1"
   sha256 "74ac8397ea29720f116980ea00cf60c34430be1f64489b407f7cf95553babbef"
   
