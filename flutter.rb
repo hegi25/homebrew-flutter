@@ -1,4 +1,6 @@
 class Flutter < Formula
+  depends_on "usbmuxd"
+  
   desc "Provide progress bars for shell scripts"
   homepage "https://flutter.io/"
   url "https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_v1.2.1-stable.zip"
