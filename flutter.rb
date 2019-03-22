@@ -1,5 +1,4 @@
-
-class flutter < Formula
+class Flutter < Formula
   require "usbmuxd"
   require "libimobiledevice"
   require "ideviceinstaller"
