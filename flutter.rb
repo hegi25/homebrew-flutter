@@ -8,6 +8,13 @@ class Flutter < Formula
 
   def install
     bin.install "bin/flutter"
+    system "brew", "install", "--HEAD", "usbmuxd"
+    system "brew", "link", "usbmuxd"
+    system "brew", "install", "--HEAD", "libimobiledevice"
+    system "brew", "install", "ideviceinstaller"
+    system "brew", "install", "ios-deploy"
+    system "brew", "install", "cocoapods"
+    system "pod", "setup"
   end
 
 end
