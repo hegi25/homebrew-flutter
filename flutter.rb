@@ -1,9 +1,9 @@
 class Flutter < Formula
-  require "usbmuxd"
-  require "libimobiledevice"
-  require "ideviceinstaller"
-  require "ios-deploy"
-  require "cocoapods"
+  depends_on "usbmuxd"
+  depends_on "libimobiledevice"
+  depends_on "ideviceinstaller"
+  depends_on "ios-deploy"
+  depends_on "cocoapods"
   
   version "1.2.1"
   sha256 "74ac8397ea29720f116980ea00cf60c34430be1f64489b407f7cf95553babbef"
