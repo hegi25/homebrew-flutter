@@ -6,8 +6,11 @@ cask 'flutter' do
   name 'flutter'
   homepage "https://flutter.io/"
 
+  binary "#{staged_path}/flutter/bin/flutter"
+  
   def install
-    system "pod", "setup"
+    # ENV.deparallelize
+    system "flutter", "doctor"
   end
 
 end
