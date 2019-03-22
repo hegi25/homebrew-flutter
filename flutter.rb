@@ -1,5 +1,9 @@
 class Flutter < Formula
   depends_on "usbmuxd"
+  depends_on "libimobiledevice"
+  depends_on "ideviceinstaller"
+  depends_on "ios-deploy"
+  depends_on "cocoapods"
   
   desc "Provide progress bars for shell scripts"
   homepage "https://flutter.io/"
@@ -11,12 +15,12 @@ class Flutter < Formula
   def install
     ENV.refurbish_args
     bin.install "bin/flutter"
-    system "brew", "install", "--HEAD", "usbmuxd"
-    system "brew", "link", "usbmuxd"
-    system "brew", "install", "--HEAD", "libimobiledevice"
-    system "brew", "install", "ideviceinstaller"
-    system "brew", "install", "ios-deploy"
-    system "brew", "install", "cocoapods"
+  #  system "brew", "install", "--HEAD", "usbmuxd"
+  #  system "brew", "link", "usbmuxd"
+  #  system "brew", "install", "--HEAD", "libimobiledevice"
+  #  system "brew", "install", "ideviceinstaller"
+  #  system "brew", "install", "ios-deploy"
+  #  system "brew", "install", "cocoapods"
     system "pod", "setup"
   end
 
