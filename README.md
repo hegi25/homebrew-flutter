@@ -4,7 +4,7 @@ This repo provides a [cask](https://github.com/Homebrew/homebrew-cask) for the v
 
 First you have to tap this repository: 
 ```
-brew tap fabsb/flutter
+brew tap hegi25/flutter
 ```
 
 Then install flutter:
@@ -20,5 +20,5 @@ flutter doctor
 To remove flutter and this tap:
 ```
 brew cask uninstall flutter
-brew untap fabsb/flutter
+brew untap hegi25/flutter
 ```
