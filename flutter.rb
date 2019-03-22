@@ -7,11 +7,6 @@ class Flutter < Formula
   
   bottle :unneeded
 
-  depends_on "usbmuxd"
-  depends_on "libimobiledevice"
-  depends_on "ideviceinstaller"
-  depends_on "ios-deploy"
-  depends_on "cocoapods"
   
   def install
     system "pod", "setup"
