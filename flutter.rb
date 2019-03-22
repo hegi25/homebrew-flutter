@@ -7,6 +7,7 @@ class Flutter < Formula
   bottle :unneeded
 
   def install
+    ENV.refurbish_args
     bin.install "bin/flutter"
     system "brew", "install", "--HEAD", "usbmuxd"
     system "brew", "link", "usbmuxd"
