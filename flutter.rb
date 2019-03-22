@@ -7,7 +7,7 @@ class Flutter < Formula
   bottle :unneeded
 
   def install
-    bin.install "bar"
+    bin.install "flutter"
   end
 
 end
