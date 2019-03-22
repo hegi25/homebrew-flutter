@@ -14,7 +14,6 @@ class Flutter < Formula
 
   def install
     ENV.refurbish_args
-    system "./bin/flutter"
     allfiles = File.join(buildpath, "**", "{*,.*}")
     mv Dir.glob(allfiles), Dir.glob(prefix), :force => true
     
